@@ -1,5 +1,4 @@
-
-sudo: required
+sudo: true
 services:
   - docker
   
@@ -21,9 +20,6 @@ deploy:
     branch: master
 
   access_key_id: $AWS_ACCESS_KEY
-  secret_access_key:
-    secure: "$AWS_SECRET_KEY"  
+  secret_access_key: $AWS_SECRET_KEY
 
-
-  
 
